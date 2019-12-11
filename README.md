@@ -52,6 +52,8 @@ The gem currently adds 3 methods to Array objects.
 
 Example usage: 
 ```ruby
+require 'each_with'
+
 some_array = [1,2,3]
 some_array.each_indicate_last do |element, is_last|
   if is_last
