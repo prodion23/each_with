@@ -3,12 +3,12 @@ require_relative 'lib/each_with/version'
 Gem::Specification.new do |spec|
   spec.name          = "each_with"
   spec.version       = EachWith::VERSION
-  spec.authors       = ["Donnie Propst"]
-  spec.email         = ["donniepropst@gmail.com"]
+  spec.authors       = ["prodion23"]
+  spec.email         = ["golden_zinia@protonmail.com"]
 
   spec.summary       = %q{Some helpful methods for iteration}
   spec.description   = %q{im tired of if index == array.length}
-  spec.homepage      = "https://github.com/prodion23/each-with"
+  spec.homepage      = "https://github.com/prodion23/each_with"
   spec.license       = "MIT"
   spec.required_ruby_version = Gem::Requirement.new(">= 2.3.0")
 
