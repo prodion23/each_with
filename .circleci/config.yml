@@ -9,15 +9,14 @@ orbs:
   ruby: circleci/ruby@0.1.2 # Ruby orb registry: https://circleci.com/orbs/registry/orb/circleci/ruby
 
 jobs:
-  build:
+  test:
     docker:
       - image: circleci/ruby:2.6.3-stretch-node
     steps:
       - checkout
-      - run:
-          name: Which bundler?
-          command: gem install bundler -v 2.1.0.pre.3
-      - ruby/bundle-install
+      - run: gem install bundler -v 2.1.0.pre.3
+      - run: bundle install
+      - run: bundle exec rspec
 
 # What to do next? Set up a test job. Please see
 # https://circleci.com/docs/2.0/configuration-reference/, for more  info on how to get started.
