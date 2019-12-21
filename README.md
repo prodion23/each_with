@@ -1,4 +1,5 @@
 # EachWith
+[![CircleCI](https://circleci.com/gh/prodion23/each_with.svg?style=svg)](https://circleci.com/gh/prodion23/each_with)
 
 The EachWith gems adds some minor helper methods to array iteration.  
 
