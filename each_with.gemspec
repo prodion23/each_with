@@ -7,7 +7,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["golden_zinia@protonmail.com"]
 
   spec.summary       = %q{Some helpful methods for iteration}
-  spec.description   = %q{im tired of if index == array.length}
+  spec.description   = %q{Add indication methods to Array to determine what element you are on!}
   spec.homepage      = "https://github.com/prodion23/each_with"
   spec.license       = "MIT"
   spec.required_ruby_version = Gem::Requirement.new(">= 2.3.0")
