@@ -16,7 +16,7 @@ jobs:
       - checkout
       - run:
           name: Which bundler?
-          command: bundle -v
+          command: gem install bundler -v 2.1.0.pre.3
       - ruby/bundle-install
 
 # What to do next? Set up a test job. Please see
