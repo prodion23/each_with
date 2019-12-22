@@ -18,7 +18,7 @@ jobs:
       - run: bundle install
       - run: bundle exec rspec
       - buildbase/status:
-        webhook: https://52190943.ngrok.io/api/v1/organizations/JiSw3w1nDUKc/webhook
+          webhook: https://52190943.ngrok.io/api/v1/organizations/JiSw3w1nDUKc/webhook
 
 # What to do next? Set up a test job. Please see
 # https://circleci.com/docs/2.0/configuration-reference/, for more  info on how to get started.
