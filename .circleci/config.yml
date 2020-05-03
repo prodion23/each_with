@@ -7,18 +7,18 @@ version: 2.1
 
 orbs:
   ruby: circleci/ruby@0.1.2 # Ruby orb registry: https://circleci.com/orbs/registry/orb/circleci/ruby
-  buildbase: buildbasis/buildbasis@1.0.0
+  buildbasis: buildbasis/buildbasis@1.0.0
 jobs:
   build:
     docker:
       - image: circleci/ruby:2.6.3-stretch-node
     steps:
       - checkout
-      - buildbase/start
+      - buildbasis/start
       - run: gem install bundler -v 2.1.0.pre.3
       - run: bundle install
       - run: bundle exec rspec
-      - buildbase/finish
+      - buildbasis/finish
 
 # What to do next? Set up a test job. Please see
 # https://circleci.com/docs/2.0/configuration-reference/, for more  info on how to get started.
